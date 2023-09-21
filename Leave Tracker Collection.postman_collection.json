@@ -1,0 +1,2264 @@
+{
+	"info": {
+		"_postman_id": "4537d52d-a932-4b4e-9902-fefeba211d69",
+		"name": "Leave Tracker Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23260778"
+	},
+	"item": [
+		{
+			"name": "Checking weather the server is up or not",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8123/",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 09:26:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Welcome to SHIVA SOLUTIONS"
+				},
+				{
+					"name": "Shiva Solutions HomePage",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-IN"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:47:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel = \"icon\" href = \r\n\"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n        <title>Shiva Solutions</title>\n        <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n        \r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        /*#copyright {\r\n            text-align: center;\r\n            font-size: 14px;\r\n            color: #666;\r\n            margin-top: 20px;\r\n        }*/\r\n        \r\n        #copyright {\r\n            background-color: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        li{\r\n        \tmargin-bottom: 10px;\r\n        }\r\n    </style>\n    </head>\n    <body>\n        <header>\n            <div id=\"logo\">\n                <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n            </div>\n            <h1>Shiva Solutions</h1>\n            <div id=\"top-right\">\n                <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n            </div>\n        </header>\n        <div id=\"menu\">\n            <a href=\"#about\">About Us</a>\n            <a href=\"#services\">Our Services</a>\n            <a href=\"#team\">Our Team</a>\n            <a href=\"#contact\">Contact Us</a>\n            <a href=\"ShivaSolutionsEmployeePortal.html\" target=\"_blank\">Employee Portal</a>\n            <a href=\"ShivaSolutionsCareers.html\" target=\"_blank\">Careers</a>\n        </div>\n        <div id=\"content\">\n            <section id=\"about\">\n                <h2>About Us</h2>\n                <!-- <p>Welcome to Shiva Solutions, where we provide innovative solutions for your business needs.</p>  -->\n                <p>Welcome to Shiva Solutions! We are a dynamic and innovative company dedicated to providing cutting-edge solutions for our clients. With a team of experts, we strive to meet and exceed your expectations in every project we undertake.</p>\n                <p>Our commitment to excellence, creativity, and customer satisfaction sets us apart in the industry. We look forward to partnering with you and helping your business thrive.</p>\n            </section>\n            <section id=\"services\">\n                <h2>Our Services</h2>\n                <ul>\n                    <li>\n                        <b>IT Development</b>: We develop custom software and applications to meet the specific needs of our clients.\n                    </li>\n                    <li>\n                        <b>IT Consulting</b>: We provide advice and guidance on IT matters, such as choosing the right hardware and software, implementing security measures, and migrating to the cloud.\n                    </li>\n                    <li>\n                        <b>IT Outsourcing</b>: We contract out IT services to a third-party provider, which can be a cost-effective way to get the IT support you need.\n                    </li>\n                    <li>\n                        <b>IT Project Management</b>: We plan, manage, and execute IT projects.\n                    </li>\n                    <li>\n                        <b>IT Asset Management</b>: We track and manage IT assets, such as hardware, software, and licenses.\n                    </li>\n                    <li>\n                        <b>Data Backup and Recovery</b>: We back up data and recover it in the event of a disaster.\n                    </li>\n                    <li>\n                        <b>Managed IT Services</b>: We provide a comprehensive range of IT services, such as hardware and software support, network infrastructure management, and cybersecurity.\n                    </li>\n                    <li>\n                        <b>Cloud Computing</b>: We provide access to cloud-based services, such as storage, computing, and networking.\n                    </li>\n                    <li>\n                        <b>CyberSecurity</b>: We protect systems and data from cyberattacks using a variety of methods, including firewalls, intrusion detection systems, and data encryption.\n                    </li>\n                    <li>\n                        <b>IT Training</b>: We provide training on IT products and services, such as how to use software applications, how to manage networks, and how to protect data from cyberattacks.\n                    </li>\n                    <li>\n                        <b>IT Help Desk</b>: We provide support to users with IT problems.\n                    </li>\n                </ul>\n            </section>\n            <section id=\"team\">\n                <h2>Our Team</h2>\n                <ul>\n                    <li>\n                        <b>Chairman, CEO </b> - Jithendra -\n                        <a href=\"mailto:njithendra@shivasolutions.com\">njithendra@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>President</b> - Shiva -\n                        <a href=\"mailto:shiva@shivasolutions.com\">shiva@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>COO</b> - Ganesh -\n                        <a href=\"mailto:ganesh@shivasolutions.com\">ganesh@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CTO</b> - Saraswathi -\n                        <a href=\"mailto:saraswathi@shivasolutions.com\">saraswathi@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CFO</b> - Lakshmi -\n                        <a href=\"mailto:lakshmi@shivasolutions.com\">lakshmi@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CHRO</b> - Taylor Swift -\n                        <a href=\"mailto:taylor.swift@shivasolutions.com\">taylor.swift@shivasolutions.com</a>\n                    </li>\n                </ul>\n            </section>\n            <section id=\"contact\">\n                <h2>Contact Us</h2>\n                <p>If you have any questions or inquiries, please feel free to \n                    <a href=\"mailto:info@shivasolutions.com\">contact us</a>.\n                </p>\n                <address>\r\n                Phone: \n                    <a href=\"tel:+1234567890\">+1 (234) 567-890</a>\n                    <br>\r\n                Address: 123 Shiva Main Street, Shiavapuram, India\r\n            \n                </address>\n            </section>\n        </div>\n        <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "ShivaSolutionsHomePage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8123/ShivaSolutionsHomePage.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"ShivaSolutionsHomePage.html"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8123/ShivaSolutionsHomePage.html",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"ShivaSolutionsHomePage.html"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-IN"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:49:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel = \"icon\" href = \r\n\"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n        <title>Shiva Solutions</title>\n        <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n        \r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        /*#copyright {\r\n            text-align: center;\r\n            font-size: 14px;\r\n            color: #666;\r\n            margin-top: 20px;\r\n        }*/\r\n        \r\n        #copyright {\r\n            background-color: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        li{\r\n        \tmargin-bottom: 10px;\r\n        }\r\n    </style>\n    </head>\n    <body>\n        <header>\n            <div id=\"logo\">\n                <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n            </div>\n            <h1>Shiva Solutions</h1>\n            <div id=\"top-right\">\n                <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n            </div>\n        </header>\n        <div id=\"menu\">\n            <a href=\"#about\">About Us</a>\n            <a href=\"#services\">Our Services</a>\n            <a href=\"#team\">Our Team</a>\n            <a href=\"#contact\">Contact Us</a>\n            <a href=\"ShivaSolutionsEmployeePortal.html\" target=\"_blank\">Employee Portal</a>\n            <a href=\"ShivaSolutionsCareers.html\" target=\"_blank\">Careers</a>\n        </div>\n        <div id=\"content\">\n            <section id=\"about\">\n                <h2>About Us</h2>\n                <!-- <p>Welcome to Shiva Solutions, where we provide innovative solutions for your business needs.</p>  -->\n                <p>Welcome to Shiva Solutions! We are a dynamic and innovative company dedicated to providing cutting-edge solutions for our clients. With a team of experts, we strive to meet and exceed your expectations in every project we undertake.</p>\n                <p>Our commitment to excellence, creativity, and customer satisfaction sets us apart in the industry. We look forward to partnering with you and helping your business thrive.</p>\n            </section>\n            <section id=\"services\">\n                <h2>Our Services</h2>\n                <ul>\n                    <li>\n                        <b>IT Development</b>: We develop custom software and applications to meet the specific needs of our clients.\n                    </li>\n                    <li>\n                        <b>IT Consulting</b>: We provide advice and guidance on IT matters, such as choosing the right hardware and software, implementing security measures, and migrating to the cloud.\n                    </li>\n                    <li>\n                        <b>IT Outsourcing</b>: We contract out IT services to a third-party provider, which can be a cost-effective way to get the IT support you need.\n                    </li>\n                    <li>\n                        <b>IT Project Management</b>: We plan, manage, and execute IT projects.\n                    </li>\n                    <li>\n                        <b>IT Asset Management</b>: We track and manage IT assets, such as hardware, software, and licenses.\n                    </li>\n                    <li>\n                        <b>Data Backup and Recovery</b>: We back up data and recover it in the event of a disaster.\n                    </li>\n                    <li>\n                        <b>Managed IT Services</b>: We provide a comprehensive range of IT services, such as hardware and software support, network infrastructure management, and cybersecurity.\n                    </li>\n                    <li>\n                        <b>Cloud Computing</b>: We provide access to cloud-based services, such as storage, computing, and networking.\n                    </li>\n                    <li>\n                        <b>CyberSecurity</b>: We protect systems and data from cyberattacks using a variety of methods, including firewalls, intrusion detection systems, and data encryption.\n                    </li>\n                    <li>\n                        <b>IT Training</b>: We provide training on IT products and services, such as how to use software applications, how to manage networks, and how to protect data from cyberattacks.\n                    </li>\n                    <li>\n                        <b>IT Help Desk</b>: We provide support to users with IT problems.\n                    </li>\n                </ul>\n            </section>\n            <section id=\"team\">\n                <h2>Our Team</h2>\n                <ul>\n                    <li>\n                        <b>Chairman, CEO </b> - Jithendra -\n                        <a href=\"mailto:njithendra@shivasolutions.com\">njithendra@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>President</b> - Shiva -\n                        <a href=\"mailto:shiva@shivasolutions.com\">shiva@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>COO</b> - Ganesh -\n                        <a href=\"mailto:ganesh@shivasolutions.com\">ganesh@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CTO</b> - Saraswathi -\n                        <a href=\"mailto:saraswathi@shivasolutions.com\">saraswathi@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CFO</b> - Lakshmi -\n                        <a href=\"mailto:lakshmi@shivasolutions.com\">lakshmi@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CHRO</b> - Taylor Swift -\n                        <a href=\"mailto:taylor.swift@shivasolutions.com\">taylor.swift@shivasolutions.com</a>\n                    </li>\n                </ul>\n            </section>\n            <section id=\"contact\">\n                <h2>Contact Us</h2>\n                <p>If you have any questions or inquiries, please feel free to \n                    <a href=\"mailto:info@shivasolutions.com\">contact us</a>.\n                </p>\n                <address>\r\n                Phone: \n                    <a href=\"tel:+1234567890\">+1 (234) 567-890</a>\n                    <br>\r\n                Address: 123 Shiva Main Street, Shiavapuram, India\r\n            \n                </address>\n            </section>\n        </div>\n        <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "ShivaSolutionsAbout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8123/about.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"about.html"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8123/about.html",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"about.html"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-IN"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:53:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel = \"icon\" href = \r\n\"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n        <title>Shiva Solutions</title>\n        <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n        \r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        /*#copyright {\r\n            text-align: center;\r\n            font-size: 14px;\r\n            color: #666;\r\n            margin-top: 20px;\r\n        }*/\r\n        \r\n        #copyright {\r\n            background-color: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        li{\r\n        \tmargin-bottom: 10px;\r\n        }\r\n    </style>\n    </head>\n    <body>\n        <header>\n            <div id=\"logo\">\n                <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n            </div>\n            <h1>Shiva Solutions</h1>\n            <div id=\"top-right\">\n                <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n            </div>\n        </header>\n        <div id=\"menu\">\n            <a href=\"ShivaSolutionsHomePage.html\" >Office Site</a>\n            <a href=\"ShivaSolutionsEmployeePortal.html\" target=\"_blank\">Employee Portal</a>\n            <a href=\"ShivaSolutionsCareers.html\">Back</a>\n        </div>\n        <div id=\"content\">\n            <section id=\"about\">\n                <h2>About Us</h2>\n                <!-- <p>Welcome to Shiva Solutions, where we provide innovative solutions for your business needs.</p>  -->\n                <p>Welcome to Shiva Solutions! We are a dynamic and innovative company dedicated to providing cutting-edge solutions for our clients. With a team of experts, we strive to meet and exceed your expectations in every project we undertake.</p>\n                <p>Our commitment to excellence, creativity, and customer satisfaction sets us apart in the industry. We look forward to partnering with you and helping your business thrive.</p>\n            </section>\n        </div>\n        <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "ShivaSolutionsServices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8123/services.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"services.html"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8123/services.html",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"services.html"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-IN"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:53:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel = \"icon\" href = \r\n\"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n        <title>Shiva Solutions</title>\n        <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n        \r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        /*#copyright {\r\n            text-align: center;\r\n            font-size: 14px;\r\n            color: #666;\r\n            margin-top: 20px;\r\n        }*/\r\n        \r\n        #copyright {\r\n            background-color: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        li{\r\n        \tmargin-bottom: 10px;\r\n        }\r\n    </style>\n    </head>\n    <body>\n        <header>\n            <div id=\"logo\">\n                <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n            </div>\n            <h1>Shiva Solutions</h1>\n            <div id=\"top-right\">\n                <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n            </div>\n        </header>\n        <div id=\"menu\">\n            <a href=\"ShivaSolutionsHomePage.html\" >Office Site</a>\n            <a href=\"ShivaSolutionsEmployeePortal.html\" target=\"_blank\">Employee Portal</a>\n            <a href=\"ShivaSolutionsCareers.html\">Back</a>\n        </div>\n        <div id=\"content\">\n            <section id=\"services\">\n                <h2>Our Services</h2>\n                <ul>\n                    <li>\n                        <b>IT Development</b>: We develop custom software and applications to meet the specific needs of our clients.\n                    </li>\n                    <li>\n                        <b>IT Consulting</b>: We provide advice and guidance on IT matters, such as choosing the right hardware and software, implementing security measures, and migrating to the cloud.\n                    </li>\n                    <li>\n                        <b>IT Outsourcing</b>: We contract out IT services to a third-party provider, which can be a cost-effective way to get the IT support you need.\n                    </li>\n                    <li>\n                        <b>IT Project Management</b>: We plan, manage, and execute IT projects.\n                    </li>\n                    <li>\n                        <b>IT Asset Management</b>: We track and manage IT assets, such as hardware, software, and licenses.\n                    </li>\n                    <li>\n                        <b>Data Backup and Recovery</b>: We back up data and recover it in the event of a disaster.\n                    </li>\n                    <li>\n                        <b>Managed IT Services</b>: We provide a comprehensive range of IT services, such as hardware and software support, network infrastructure management, and cybersecurity.\n                    </li>\n                    <li>\n                        <b>Cloud Computing</b>: We provide access to cloud-based services, such as storage, computing, and networking.\n                    </li>\n                    <li>\n                        <b>CyberSecurity</b>: We protect systems and data from cyberattacks using a variety of methods, including firewalls, intrusion detection systems, and data encryption.\n                    </li>\n                    <li>\n                        <b>IT Training</b>: We provide training on IT products and services, such as how to use software applications, how to manage networks, and how to protect data from cyberattacks.\n                    </li>\n                    <li>\n                        <b>IT Help Desk</b>: We provide support to users with IT problems.\n                    </li>\n                </ul>\n            </section>\n        </div>\n        <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "ShivaSolutionsTeam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8123/team.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"team.html"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8123/team.html",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"team.html"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-IN"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:55:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel = \"icon\" href = \r\n\"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n        <title>Shiva Solutions</title>\n        <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n        \r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        /*#copyright {\r\n            text-align: center;\r\n            font-size: 14px;\r\n            color: #666;\r\n            margin-top: 20px;\r\n        }*/\r\n        \r\n        #copyright {\r\n            background-color: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        li{\r\n        \tmargin-bottom: 10px;\r\n        }\r\n    </style>\n    </head>\n    <body>\n        <header>\n            <div id=\"logo\">\n                <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n            </div>\n            <h1>Shiva Solutions</h1>\n            <div id=\"top-right\">\n                <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n            </div>\n        </header>\n        <div id=\"menu\">\n            <a href=\"ShivaSolutionsHomePage.html\" >Office Site</a>\n            <a href=\"ShivaSolutionsEmployeePortal.html\" target=\"_blank\">Employee Portal</a>\n            <a href=\"ShivaSolutionsCareers.html\">Back</a>\n        </div>\n        <div id=\"content\">\n            <section id=\"team\">\n                <h2>Our Team</h2>\n                <ul>\n                    <li>\n                        <b>Chairman, CEO </b> - Jithendra -\n                        <a href=\"mailto:njithendra@shivasolutions.com\">njithendra@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>President</b> - Shiva -\n                        <a href=\"mailto:shiva@shivasolutions.com\">shiva@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>COO</b> - Ganesh -\n                        <a href=\"mailto:ganesh@shivasolutions.com\">ganesh@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CTO</b> - Saraswathi -\n                        <a href=\"mailto:saraswathi@shivasolutions.com\">saraswathi@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CFO</b> - Lakshmi -\n                        <a href=\"mailto:lakshmi@shivasolutions.com\">lakshmi@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CHRO</b> - Taylor Swift -\n                        <a href=\"mailto:taylor.swift@shivasolutions.com\">taylor.swift@shivasolutions.com</a>\n                    </li>\n                </ul>\n            </section>\n        </div>\n        <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "ShivaSolutionsEmployeePortal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8123/ShivaSolutionsEmployeePortal.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"ShivaSolutionsEmployeePortal.html"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8123/ShivaSolutionsEmployeePortal.html",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"ShivaSolutionsEmployeePortal.html"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-IN"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:51:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel = \"icon\" href = \r\n\"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n        <title>Shiva Solutions Employee Portal</title>\n        <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n        \r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: -15px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        /*#copyright {\r\n            text-align: center;\r\n            font-size: 14px;\r\n            color: #666;\r\n            margin-top: 20px;\r\n        }*/\r\n        \r\n        #copyright {\r\n            background-color: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        li{\r\n        \tmargin-bottom: 10px;\r\n        }\r\n        #portal-info {\r\n    \t\ttext-align: center;\r\n    \t\tmargin-top: 0; \r\n    \t\tfont-size: 20px; \r\n    \t\tcolor: #666;\r\n    \t\tpadding:10px;\r\n\t\t}\r\n\t\t\r\n    </style>\n    </head>\n    <body>\n        <header>\n            <div id=\"logo\">\n                <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n            </div>\n            <h1>Shiva Solutions</h1>\n            <h2 id=\"portal-info\">Employee Portal</h2>\n            <div id=\"top-right\">\n                <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n            </div>\n        </header>\n        <div id=\"menu\">\n            <a href=\"ShivaSolutionsHomePage.html\">Company Official Site</a>\n            <a href=\"#services\">Services</a>\n            <a href=\"#team\">Our Team</a>\n            <a href=\"#contact\">Contact Us</a>\n            <a href=\"ShivaSolutionsCareers.html\" target=\"_blank\">Careers</a>\n        </div>\n        <div id=\"content\">\n            <section id=\"services\">\n                <h2>Services</h2>\n                <ul>\n                    <li>\n                        <b>Get Employee Details</b> -\n                        <a href=\"http://localhost:8123/getEmployee/{id}\" target=\"_blank\">Click Here</a>\n                    </li>\n                    <li>\n                        <b>Get All Employee Details</b> -\n                        <a href=\"http://localhost:8123/getEmployees\" target=\"_blank\">Click Here</a>\n                    </li>\n                    <li>\n                        <b>Update Employee Details</b> -\n                        <a href=\"http://localhost:8123/updateEmployee\" target=\"_blank\">Click Here</a>\n                    </li>\n                    <li>\n                        <b>Apply Leave</b> -\n                        <a href=\"http://localhost:8123/applyLeave\" target=\"_blank\">Click Here</a>\n                    </li>\n                    <li>\n                        <b>Check Leaves</b> -\n                        <a href=\"http://localhost:8123/checkLeaves/{id}\" target=\"_blank\">Click Here</a>\n                    </li>\n                </ul>\n            </section>\n            <section id=\"team\">\n                <h2>Our Team</h2>\n                <ul>\n                    <li>\n                        <b>Chairman, CEO </b> - Jithendra -\n                        <a href=\"mailto:njithendra@shivasolutions.com\">njithendra@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>President</b> - Shiva -\n                        <a href=\"mailto:shiva@shivasolutions.com\">shiva@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>COO</b> - Ganesh -\n                        <a href=\"mailto:ganesh@shivasolutions.com\">ganesh@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CTO</b> - Saraswathi -\n                        <a href=\"mailto:saraswathi@shivasolutions.com\">saraswathi@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CFO</b> - Lakshmi -\n                        <a href=\"mailto:lakshmi@shivasolutions.com\">lakshmi@shivasolutions.com</a>\n                    </li>\n                    <li>\n                        <b>CHRO</b> - Taylor Swift -\n                        <a href=\"mailto:taylor.swift@shivasolutions.com\">taylor.swift@shivasolutions.com</a>\n                    </li>\n                </ul>\n            </section>\n            <section id=\"contact\">\n                <h2>Contact Us</h2>\n                <p>If you have any questions or inquiries, please feel free to \n                    <a href=\"mailto:info@shivasolutions.com\">contact us</a>.\n                </p>\n                <address>\r\n                Phone: \n                    <a href=\"tel:+1234567890\">+1 (234) 567-890</a>\n                    <br>\r\n                Address: 123 Shiva Main Street, Shiavapuram, India\r\n            \n                </address>\n            </section>\n        </div>\n        <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "ShivaSolutionsCareers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8123/ShivaSolutionsCareers.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"ShivaSolutionsCareers.html"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8123/ShivaSolutionsCareers.html",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"ShivaSolutionsCareers.html"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-IN"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:52:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<!--\n<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel = \"icon\" href = \r\n\"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n        <title>Careers - Shiva Solutions</title>\n        <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: -15px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        .job-opening {\r\n            margin-bottom: 20px;\r\n            padding: 20px;\r\n            border: 1px solid #ddd;\r\n            border-radius: 5px;\r\n        }\r\n        \r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        #career-info {\r\n    \t\ttext-align: center;\r\n    \t\tmargin-top: 0; \r\n    \t\tfont-size: 20px; \r\n    \t\tcolor: #666;\r\n    \t\tpadding:10px;\r\n\t\t}\r\n    </style>\n    </head>\n    <body>\n        <header>\n            <div id=\"logo\">\n                <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n            </div>\n            <h1>Shiva Solutions</h1>\n            <h2 id=\"career-info\">Careers</h2>\n            <div id=\"top-right\">\n                <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n            </div>\n        </header>\n        <div id=\"menu\">\n            <a href=\"ShivaSolutionsHomePage.html\">Official Site</a>\n            <a href=\"about.html\">About Us</a>\n            <a href=\"services.html\">Services</a>\n            <a href=\"team.html\">Our Team</a>\n            <a href=\"contact.html\">Contact Us</a>\n            <a href=\"ShivaSolutionsEmployeePortal.html\">Employee Portal</a>\n        </div>\n        <div id=\"content\">\n            <h2>Join Our Team</h2>\n            <p>We're always looking for talented individuals to join our team and contribute to our mission. Explore our current job openings below and apply today:</p>\n            <div class=\"job-opening\">\n                <h3>Job Title 1</h3>\n                <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                <p>Location: City, State</p>\n                <a href=\"apply-job-1.html\">Apply Now</a>\n            </div>\n            <div class=\"job-opening\">\n                <h3>Job Title 2</h3>\n                <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                <p>Location: City, State</p>\n                <a href=\"apply-job-2.html\">Apply Now</a>\n            </div>\n        </div>\n        <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n    </body></html>\r\n-->\n    <!DOCTYPE html>\n    <html lang=\"en\">\n        <head>\n            <meta charset=\"UTF-8\">\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n            <link rel = \"icon\" href = \"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n            <title>Careers - Shiva Solutions</title>\n            <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: -15px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        .job-opening {\r\n            margin-bottom: 20px;\r\n            padding: 20px;\r\n            border: 1px solid #ddd;\r\n            border-radius: 5px;\r\n        }\r\n        \r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        #career-info {\r\n            text-align: center;\r\n            margin-top: 0; \r\n            font-size: 20px; \r\n            color: #666;\r\n            padding:10px;\r\n        }\r\n    </style>\n        </head>\n        <body>\n            <header>\n                <div id=\"logo\">\n                    <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n                </div>\n                <h1>Shiva Solutions</h1>\n                <h2 id=\"career-info\">Careers</h2>\n                <div id=\"top-right\">\n                    <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n                </div>\n            </header>\n            <div id=\"menu\">\n                <a href=\"ShivaSolutionsHomePage.html\">Official Site</a>\n                <a href=\"about.html\">About Us</a>\n                <a href=\"services.html\">Services</a>\n                <a href=\"team.html\">Our Team</a>\n                <a href=\"contact.html\">Contact Us</a>\n                <a href=\"ShivaSolutionsEmployeePortal.html\">Employee Portal</a>\n            </div>\n            <div id=\"content\">\n                <h2>Join Our Team</h2>\n                <p>We're always looking for talented individuals to join our team and contribute to our mission. Explore our current job openings below and apply today:</p>\n                <!-- Job Openings -->\n                <div class=\"job-opening\">\n                    <h3>Job Title 1</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-1.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 2</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-2.html\">Apply Now</a>\n                </div>\n                <!-- Add more job openings as needed -->\n                <div class=\"job-opening\">\n                    <h3>Job Title 3</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-3.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 4</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-4.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 5</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-5.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 6</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-6.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 7</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-7.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 8</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-8.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 9</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-9.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 10</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-10.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 11</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-11.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 12</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-12.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 13</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-13.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 14</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-14.html\">Apply Now</a>\n                </div>\n                <div class=\"job-opening\">\n                    <h3>Job Title 15</h3>\n                    <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod erat nec justo bibendum, id feugiat risus euismod.</p>\n                    <p>Location: City, State</p>\n                    <a href=\"apply-job-15.html\">Apply Now</a>\n                </div>\n            </div>\n            <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n        </body>\n    </html>"
+				}
+			]
+		},
+		{
+			"name": "ShivaSolutionsContacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8123/contact.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"contact.html"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8123/contact.html",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"contact.html"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-IN"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:57:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <link rel = \"icon\" href = \r\n\"shiva-solutions-logo.png\" type = \"image/x-icon\" sizes = \"32x32\">\n        <title>Shiva Solutions</title>\n        <style>\r\n        /* Add CSS styles here */\r\n        body {\r\n            font-family: 'Arial', sans-serif;\r\n            background-color: #f0f0f0;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        header {\r\n            background-color: #35424a;\r\n            color: #ffffff;\r\n            text-align: center;\r\n            padding: 20px 0;\r\n        }\r\n\r\n        h1 {\r\n            margin: 0;\r\n            font-size: 36px;\r\n            color: #ff9900; /* Highlighted color */\r\n        }\r\n\r\n        #top-right {\r\n            position: absolute;\r\n            top: 20px;\r\n            right: 20px;\r\n            font-size: 18px;\r\n            color: #666;\r\n        }\r\n        \r\n\r\n        #menu {\r\n            text-align: center;\r\n            background-color: #35424a;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #menu a {\r\n            color: #ffffff;\r\n            text-decoration: none;\r\n            margin: 0 20px;\r\n            font-size: 16px;\r\n            transition: color 0.3s;\r\n        }\r\n\r\n        #menu a:hover {\r\n            color: #ff9900; /* Highlighted color on hover */\r\n        }\r\n\r\n        #content {\r\n            text-align: left;\r\n            margin: 50px auto;\r\n            max-width: 800px;\r\n            padding: 20px;\r\n            background-color: #ffffff;\r\n            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\r\n            border-radius: 5px;\r\n        }\r\n\r\n        #content h2 {\r\n            color: #ff9900; /* Section header color */\r\n            background-color: #35424a; /* Section header background color */\r\n            padding: 10px;\r\n            margin: 0;\r\n        }\r\n\r\n        #content p {\r\n            font-size: 18px;\r\n            color: #333;\r\n        }\r\n\r\n        /*#copyright {\r\n            text-align: center;\r\n            font-size: 14px;\r\n            color: #666;\r\n            margin-top: 20px;\r\n        }*/\r\n        \r\n        #copyright {\r\n            background-color: #333;\r\n            color: #fff;\r\n            text-align: center;\r\n            padding: 10px 0;\r\n        }\r\n\r\n        #logo {\r\n            position: absolute;\r\n            top: 20px;\r\n            left: 20px;\r\n        }\r\n        \r\n        li{\r\n        \tmargin-bottom: 10px;\r\n        }\r\n    </style>\n    </head>\n    <body>\n        <header>\n            <div id=\"logo\">\n                <img src=\"shiva-solutions-logo.png\" alt=\"Company Logo\" width=\"100\">\r\n        \n            </div>\n            <h1>Shiva Solutions</h1>\n            <div id=\"top-right\">\n                <script>\r\n                function updateDateTime() {\r\n                    const now = new Date();\r\n                    const date = now.toDateString();\r\n                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });\r\n                    document.getElementById(\"top-right\").textContent = `${date} | ${time}`;\r\n                }\r\n                setInterval(updateDateTime, 1000);\r\n                updateDateTime();\r\n            </script>\n            </div>\n        </header>\n        <div id=\"menu\">\n            <a href=\"ShivaSolutionsHomePage.html\" >Office Site</a>\n            <a href=\"ShivaSolutionsEmployeePortal.html\" target=\"_blank\">Employee Portal</a>\n            <a href=\"ShivaSolutionsCareers.html\">Back</a>\n        </div>\n        <div id=\"content\">\n            <section id=\"contact\">\n                <h2>Contact Us</h2>\n                <p>If you have any questions or inquiries, please feel free to \n                    <a href=\"mailto:info@shivasolutions.com\">contact us</a>.\n                </p>\n                <address>\r\n                Phone: \n                    <a href=\"tel:+1234567890\">+1 (234) 567-890</a>\n                    <br>\r\n                Address: 123 Shiva Main Street, Shiavapuram, India\r\n            \n                </address>\n            </section>\n        </div>\n        <div id=\"copyright\">\r\n        &copy; 2023 Shiva Solutions. All rights reserved.\r\n    </div>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "Saving Employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"empId\": 2,\r\n    \"empName\": \"Ganesh\",\r\n    \"leavesAvailable\": 13.0,\r\n    \"doj\": \"2022-04-11\",\r\n    \"noofLeavesTaken\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8123/saveEmployee",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"saveEmployee"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"empId\": 1,\r\n    \"empName\": \"Ganesh\",\r\n    \"leavesAvailable\": 15.0,\r\n    \"doj\": \"2022-04-11\",\r\n    \"noofLeavesTaken\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/saveEmployee",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:58:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 1,\n    \"empName\": \"Ganesh\",\n    \"leavesAvailable\": 15,\n    \"noofLeavesTaken\": 2,\n    \"doj\": \"2022-04-11\"\n}"
+				},
+				{
+					"name": "Example 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"empId\": 2,\r\n    \"empName\": \"Shiva\",\r\n    \"leavesAvailable\": 13.0,\r\n    \"doj\": \"2022-05-11\",\r\n    \"noofLeavesTaken\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/saveEmployee",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 10:59:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 2,\n    \"empName\": \"Shiva\",\n    \"leavesAvailable\": 13,\n    \"noofLeavesTaken\": 3,\n    \"doj\": \"2022-05-11\"\n}"
+				},
+				{
+					"name": "Example 3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"empId\": 3,\r\n    \"empName\": \"Saraswathi\",\r\n    \"leavesAvailable\": 10.0,\r\n    \"doj\": \"2022-01-11\",\r\n    \"noofLeavesTaken\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/saveEmployee",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:01:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 3,\n    \"empName\": \"Saraswathi\",\n    \"leavesAvailable\": 10,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-01-11\"\n}"
+				},
+				{
+					"name": "Example 4",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"empId\": 4,\r\n    \"empName\": \"Lakshmi\",\r\n    \"leavesAvailable\": 10.0,\r\n    \"doj\": \"2022-01-11\",\r\n    \"noofLeavesTaken\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/saveEmployee",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:01:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 4,\n    \"empName\": \"Lakshmi\",\n    \"leavesAvailable\": 10,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-01-11\"\n}"
+				},
+				{
+					"name": "Example 5",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"empId\": 5,\r\n    \"empName\": \"taylor Swift\",\r\n    \"leavesAvailable\": 10.0,\r\n    \"doj\": \"2022-06-11\",\r\n    \"noofLeavesTaken\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/saveEmployee",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:02:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 5,\n    \"empName\": \"taylor Swift\",\n    \"leavesAvailable\": 10,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-06-11\"\n}"
+				},
+				{
+					"name": "Example 6",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"empId\": 6,\r\n    \"empName\": \"Justin Bieber\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/saveEmployee",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:07:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 6,\n    \"empName\": \"Justin Bieber\",\n    \"leavesAvailable\": 0,\n    \"noofLeavesTaken\": 0,\n    \"doj\": null\n}"
+				},
+				{
+					"name": "Error Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"empId\": 6,\r\n    \"empName\": \"Justin Bieber\",\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/saveEmployee",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:07:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-09-09T11:07:23.717+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"trace\": \"org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name\\r\\n\\tat org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406)\\r\\n\\tat org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:183)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:163)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)\\r\\n\\tat org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\nCaused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name\\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 2]\\r\\n\\tat com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2477)\\r\\n\\tat com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:750)\\r\\n\\tat com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:674)\\r\\n\\tat com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2144)\\r\\n\\tat com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1794)\\r\\n\\tat com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName(UTF8StreamJsonParser.java:1081)\\r\\n\\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:399)\\r\\n\\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)\\r\\n\\tat com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)\\r\\n\\tat com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)\\r\\n\\tat com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)\\r\\n\\tat org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)\\r\\n\\t... 55 more\\r\\n\",\n    \"message\": \"JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name\",\n    \"path\": \"/saveEmployee\"\n}"
+				},
+				{
+					"name": "Employee Will be Deleted",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"empId\": 7,\r\n    \"empName\": \"Employee will be Deleted\",\r\n    \"leavesAvailable\": 0.0,\r\n    \"doj\": null,\r\n    \"noofLeavesTaken\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/saveEmployee",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:36:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 7,\n    \"empName\": \"Employee will be Deleted\",\n    \"leavesAvailable\": 0,\n    \"noofLeavesTaken\": 0,\n    \"doj\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8123/getEmployees",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"getEmployees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployees",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:02:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"empId\": 1,\n        \"empName\": \"Ganesh\",\n        \"leavesAvailable\": 15,\n        \"noofLeavesTaken\": 2,\n        \"doj\": \"2022-04-11\"\n    },\n    {\n        \"empId\": 2,\n        \"empName\": \"Shiva\",\n        \"leavesAvailable\": 13,\n        \"noofLeavesTaken\": 3,\n        \"doj\": \"2022-05-11\"\n    },\n    {\n        \"empId\": 3,\n        \"empName\": \"Saraswathi\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-01-11\"\n    },\n    {\n        \"empId\": 4,\n        \"empName\": \"Lakshmi\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-01-11\"\n    },\n    {\n        \"empId\": 5,\n        \"empName\": \"taylor Swift\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-06-11\"\n    }\n]"
+				},
+				{
+					"name": "Example 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployees",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:08:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"empId\": 1,\n        \"empName\": \"Ganesh\",\n        \"leavesAvailable\": 15,\n        \"noofLeavesTaken\": 2,\n        \"doj\": \"2022-04-11\"\n    },\n    {\n        \"empId\": 2,\n        \"empName\": \"Shiva\",\n        \"leavesAvailable\": 13,\n        \"noofLeavesTaken\": 3,\n        \"doj\": \"2022-05-11\"\n    },\n    {\n        \"empId\": 3,\n        \"empName\": \"Saraswathi\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-01-11\"\n    },\n    {\n        \"empId\": 4,\n        \"empName\": \"Lakshmi\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-01-11\"\n    },\n    {\n        \"empId\": 5,\n        \"empName\": \"taylor Swift\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-06-11\"\n    },\n    {\n        \"empId\": 6,\n        \"empName\": \"Justin Bieber\",\n        \"leavesAvailable\": 0,\n        \"noofLeavesTaken\": 0,\n        \"doj\": null\n    }\n]"
+				},
+				{
+					"name": "Example 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployees",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:37:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"empId\": 1,\n        \"empName\": \"Ganesh\",\n        \"leavesAvailable\": 15,\n        \"noofLeavesTaken\": 2,\n        \"doj\": \"2022-04-11\"\n    },\n    {\n        \"empId\": 2,\n        \"empName\": \"Shiva\",\n        \"leavesAvailable\": 13,\n        \"noofLeavesTaken\": 3,\n        \"doj\": \"2022-05-11\"\n    },\n    {\n        \"empId\": 3,\n        \"empName\": \"Saraswathi\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-01-11\"\n    },\n    {\n        \"empId\": 4,\n        \"empName\": \"Lakshmi\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-01-11\"\n    },\n    {\n        \"empId\": 5,\n        \"empName\": \"taylor Swift\",\n        \"leavesAvailable\": 10,\n        \"noofLeavesTaken\": 5,\n        \"doj\": \"2022-06-11\"\n    },\n    {\n        \"empId\": 6,\n        \"empName\": \"Justin Bieber\",\n        \"leavesAvailable\": 12.65,\n        \"noofLeavesTaken\": 3,\n        \"doj\": \"2022-12-30\"\n    },\n    {\n        \"empId\": 7,\n        \"empName\": \"Employee will be Deleted\",\n        \"leavesAvailable\": 0,\n        \"noofLeavesTaken\": 0,\n        \"doj\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Employee By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8123/getEmployee/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"getEmployee",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/getEmployee/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:03:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 1,\n    \"empName\": \"Ganesh\",\n    \"leavesAvailable\": 15,\n    \"noofLeavesTaken\": 2,\n    \"doj\": \"2022-04-11\"\n}"
+				},
+				{
+					"name": "Example 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/getEmployee/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:03:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 2,\n    \"empName\": \"Shiva\",\n    \"leavesAvailable\": 13,\n    \"noofLeavesTaken\": 3,\n    \"doj\": \"2022-05-11\"\n}"
+				},
+				{
+					"name": "Example 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/getEmployee/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:04:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 3,\n    \"empName\": \"Saraswathi\",\n    \"leavesAvailable\": 10,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-01-11\"\n}"
+				},
+				{
+					"name": "Example 4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/getEmployee/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:04:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 4,\n    \"empName\": \"Lakshmi\",\n    \"leavesAvailable\": 10,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-01-11\"\n}"
+				},
+				{
+					"name": "Example 5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empId\": 5,\r\n    \"empName\": \"taylor Swift\",\r\n    \"leavesAvailable\": 10,\r\n    \"noofLeavesTaken\": 5,\r\n    \"doj\": \"2022-06-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/getEmployee/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:04:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 5,\n    \"empName\": \"taylor Swift\",\n    \"leavesAvailable\": 10,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-06-11\"\n}"
+				},
+				{
+					"name": "Error Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployee/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"10"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:05:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-09-09T11:05:15.538+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.util.NoSuchElementException: No value present\\r\\n\\tat java.base/java.util.Optional.get(Optional.java:143)\\r\\n\\tat jithendra.github.com.LeaveTracker.service.EmployeeService.getEmployeeById(EmployeeService.java:34)\\r\\n\\tat jithendra.github.com.LeaveTracker.controller.EmployeeController.getEmployee(EmployeeController.java:70)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"No value present\",\n    \"path\": \"/getEmployee/10\"\n}"
+				},
+				{
+					"name": "Example 6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployee/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:10:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 6,\n    \"empName\": \"Justin Bieber\",\n    \"leavesAvailable\": 0,\n    \"noofLeavesTaken\": 0,\n    \"doj\": null\n}"
+				},
+				{
+					"name": "Employee Will Be Deleted",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployee/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:37:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 7,\n    \"empName\": \"Employee will be Deleted\",\n    \"leavesAvailable\": 0,\n    \"noofLeavesTaken\": 0,\n    \"doj\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Applying Leaves",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8123/applyLeave/1?noofLeaves=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"applyLeave",
+						"1"
+					],
+					"query": [
+						{
+							"key": "noofLeaves",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/applyLeave/1?noofLeaves=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"applyLeave",
+								"1"
+							],
+							"query": [
+								{
+									"key": "noofLeaves",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:11:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 1,\n    \"empName\": \"Ganesh\",\n    \"leavesAvailable\": 14.3,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-04-11\"\n}"
+				},
+				{
+					"name": "After Applying the Leave updated Employee Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployee/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:11:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 1,\n    \"empName\": \"Ganesh\",\n    \"leavesAvailable\": 14.3,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-04-11\"\n}"
+				},
+				{
+					"name": "Error Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/applyLeave/6?noofLeaves=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"applyLeave",
+								"6"
+							],
+							"query": [
+								{
+									"key": "noofLeaves",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:12:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-09-09T11:12:38.422+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.NullPointerException: text\\r\\n\\tat java.base/java.util.Objects.requireNonNull(Objects.java:233)\\r\\n\\tat java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1951)\\r\\n\\tat java.base/java.time.LocalDate.parse(LocalDate.java:430)\\r\\n\\tat java.base/java.time.LocalDate.parse(LocalDate.java:415)\\r\\n\\tat jithendra.github.com.LeaveTracker.service.EmployeeService.applyLeave(EmployeeService.java:71)\\r\\n\\tat jithendra.github.com.LeaveTracker.controller.EmployeeController.applyLeave(EmployeeController.java:92)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"text\",\n    \"path\": \"/applyLeave/6\"\n}"
+				},
+				{
+					"name": "Leave Not Found Exception Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/applyLeave/5?noofLeaves=14",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"applyLeave",
+								"5"
+							],
+							"query": [
+								{
+									"key": "noofLeaves",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:14:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timeStamp\": \"2023-09-09T16:44:50.2276838\",\n    \"status\": \"404 NOT_FOUND\",\n    \"errorCode\": \"LEAVE_NOT_FOUND_EXCEPTION\",\n    \"message\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Checking Leaves",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8123/checkLeaves/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"checkLeaves",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/checkLeaves/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"checkLeaves",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:13:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 1,\n    \"empName\": \"Ganesh\",\n    \"leavesAvailable\": 15.5,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-04-11\"\n}"
+				},
+				{
+					"name": "Example 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/checkLeaves/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"checkLeaves",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:16:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 5,\n    \"empName\": \"taylor Swift\",\n    \"leavesAvailable\": 12.45,\n    \"noofLeavesTaken\": 5,\n    \"doj\": \"2022-06-11\"\n}"
+				},
+				{
+					"name": "Error Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/checkLeaves/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"checkLeaves",
+								"7"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:16:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-09-09T11:16:43.842+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.util.NoSuchElementException: No value present\\r\\n\\tat java.base/java.util.Optional.get(Optional.java:143)\\r\\n\\tat jithendra.github.com.LeaveTracker.service.EmployeeService.applyLeave(EmployeeService.java:66)\\r\\n\\tat jithendra.github.com.LeaveTracker.service.EmployeeService.checkLeaves(EmployeeService.java:101)\\r\\n\\tat jithendra.github.com.LeaveTracker.controller.EmployeeController.checkLeaves(EmployeeController.java:110)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"No value present\",\n    \"path\": \"/checkLeaves/7\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empId\": 6,\r\n    \"empName\": \"Justin Bieber\",\r\n    \"leavesAvailable\": 10.0,\r\n    \"noofLeavesTaken\": 3,\r\n    \"doj\": \"2022-12-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8123/updateEmployee/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"updateEmployee",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Before Updating the Employee Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployee/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:18:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 6,\n    \"empName\": \"Justin Bieber\",\n    \"leavesAvailable\": 0,\n    \"noofLeavesTaken\": 0,\n    \"doj\": null\n}"
+				},
+				{
+					"name": "After Updating Employee Details",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empId\": 6,\r\n    \"empName\": \"Justin Bieber\",\r\n    \"noofLeavesTaken\": 3,\r\n    \"doj\": \"2022-12-30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8123/updateEmployee/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"updateEmployee",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:34:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 6,\n    \"empName\": \"Justin Bieber\",\n    \"leavesAvailable\": 12.65,\n    \"noofLeavesTaken\": 3,\n    \"doj\": \"2022-12-30\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Deleting Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8123/deleteEmployee/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"deleteEmployee",
+						"7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Deleted Example",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/deleteEmployee/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"deleteEmployee",
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:38:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"empId\": 7,\n    \"empName\": \"Employee will be Deleted\",\n    \"leavesAvailable\": 0,\n    \"noofLeavesTaken\": 0,\n    \"doj\": null\n}"
+				},
+				{
+					"name": "No Employee is Found After Deleting",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8123/getEmployee/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8123",
+							"path": [
+								"getEmployee",
+								"7"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Sep 2023 11:38:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-09-09T11:38:55.201+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.util.NoSuchElementException: No value present\\r\\n\\tat java.base/java.util.Optional.get(Optional.java:143)\\r\\n\\tat jithendra.github.com.LeaveTracker.service.EmployeeService.getEmployeeById(EmployeeService.java:34)\\r\\n\\tat jithendra.github.com.LeaveTracker.controller.EmployeeController.getEmployee(EmployeeController.java:70)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"No value present\",\n    \"path\": \"/getEmployee/7\"\n}"
+				}
+			]
+		}
+	]
+}
