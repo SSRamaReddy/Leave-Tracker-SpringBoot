@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="shiva-solutions-logo.png" type="image/x-icon" sizes="32x32">
+    <title>Confirmation Page - Shiva Solutions</title>
+    <style>
+    
+    	body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ff9900; /* Highlighted color */
+        }
+
+        #top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+        
+        button {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff9900; /* Highlighted color on hover */
+        }
+        
+        #content {
+            text-align: left;
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        #content h2 {
+            color: #ff9900; /* Section header color */
+            background-color: #35424a; /* Section header background color */
+            padding: 10px;
+            margin: 0;
+        }
+
+        #content p {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        #copyright {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+	
+	<header>
+        <div id="logo">
+            <img src="shiva-solutions-logo.png" alt="Company Logo" width="75">
+        </div>
+        <h1>Shiva Solutions</h1>
+        <div id="top-right">
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    const date = now.toDateString();
+                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    document.getElementById("top-right").textContent = `${date} | ${time}`;
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </div>
+    </header>
+    
+	<div id="content">
+	
+		<section>
+		
+			<h1>Thank You for Applying, <span id="user-name"></span>!</h1>
+    		<p>Before submitting your application. Can you please check your details that you have submitted. Here are the details you submitted:</p>
+
+    		<ul>
+        		<li><strong>Job Position:</strong> <span id="job-position"></span></li>
+        		<li><strong>Full Name:</strong> <span id="full-name"></span></li>
+        		<li><strong>Email:</strong> <span id="email"></span></li>
+        		<li><strong>Phone Number:</strong> <span id="phone-number"></span></li>
+        		<li><strong>Date of Birth:</strong> <span id="date-of-birth"></span></li>
+        		<li><strong>Previous Experience:</strong> <span id="previous-experience"></span></li>
+        		<li><strong>Notice Period (in weeks):</strong> <span id="notice-period"></span></li>
+        		<li><strong>Skills:</strong> <span id="skills"></span></li>
+        		<li><strong>Previous Company:</strong> <span id="previous-company"></span></li>
+    		</ul>
+    		
+		</section>
+    	
+    </div>
+    
+    <div id="button-container" style="text-align: center;padding-bottom:5px;">
+    	<button id="details-incorrect">Details Incorrect</button>
+    	<button id="details-correct">Everything is Fine</button>
+    </div>
+
+    <div>
+<!--
+    	<script>
+        	// Retrieve and display form values from local storage
+        	/*document.getElementById("user-name").textContent = localStorage.getItem("fullName");
+        	document.getElementById("job-position").textContent = localStorage.getItem("jobPosition");
+        	document.getElementById("full-name").textContent = localStorage.getItem("fullName");
+        	document.getElementById("email").textContent = localStorage.getItem("email");
+        	document.getElementById("phone-number").textContent = localStorage.getItem("phoneNumber");
+        	document.getElementById("date-of-birth").textContent = localStorage.getItem("dateOfBirth");
+        	document.getElementById("previous-experience").textContent = localStorage.getItem("previousExperience");
+        	document.getElementById("notice-period").textContent = localStorage.getItem("noticePeriod");
+        	document.getElementById("skills").textContent = localStorage.getItem("skills");
+        	document.getElementById("previous-company").textContent = localStorage.getItem("previousCompany");
+        
+        	
+        	
+        	// Add event listeners for the buttons
+        	const detailsIncorrectButton = document.getElementById("details-incorrect");
+        	const detailsCorrectButton = document.getElementById("details-correct");
+
+        	// Redirect to the application form page if details are incorrect
+        	detailsIncorrectButton.addEventListener("click", function () {
+            	window.location.href = "apply-job.html"; // Replace with the actual URL of your application form page
+        	});
+
+        	// Redirect to the thank you page if details are correct
+       	 	detailsCorrectButton.addEventListener("click", function () {
+            	window.location.href = "thank-you.html"; // Replace with the actual URL of your confirmation page
+        	});
+        	*/
+        	
+        	const jobPosition = localStorage.getItem("jobPosition");
+            const fullName = localStorage.getItem("fullName");
+            const email = localStorage.getItem("email");
+            const phoneNumber = localStorage.getItem("phoneNumber");
+            const dateOfBirth = localStorage.getItem("dateOfBirth");
+            const previousExperience = localStorage.getItem("previousExperience");
+            const noticePeriod = localStorage.getItem("noticePeriod");
+            const skills = localStorage.getItem("skills");
+            const previousCompany = localStorage.getItem("previousCompany");
+
+            // Display the retrieved values
+            document.getElementById("job-position").textContent = jobPosition || "N/A";
+            document.getElementById("user-name").textContent = fullName || "N/A";
+            document.getElementById("full-name").textContent = fullName || "N/A";
+            document.getElementById("email").textContent = email || "N/A";
+            document.getElementById("phone-number").textContent = phoneNumber || "N/A";
+            document.getElementById("date-of-birth").textContent = dateOfBirth || "N/A";
+            document.getElementById("previous-experience").textContent = previousExperience || "N/A";
+            document.getElementById("notice-period").textContent = noticePeriod || "N/A";
+            document.getElementById("skills").textContent = skills || "N/A";
+            document.getElementById("previous-company").textContent = previousCompany || "N/A";
+
+            // Add event listeners for the buttons
+            const detailsIncorrectButton = document.getElementById("details-incorrect");
+            const detailsCorrectButton = document.getElementById("details-correct");
+
+            // Redirect to the application form page if details are incorrect
+            detailsIncorrectButton.addEventListener("click", function () {
+                window.location.href = "apply-job.html"; // Replace with the actual URL of your application form page
+            });
+
+            // Redirect to the thank you page if details are correct
+            detailsCorrectButton.addEventListener("click", function () {
+                window.location.href = "thank-you.html"; // Replace with the actual URL of your confirmation page
+            });
+    	</script>
+    -->
+
+<!-- ... (other code) ... -->
+<script>
+    // Display stored form values
+    const jobPosition = localStorage.getItem("jobPosition");
+    const fullName = localStorage.getItem("fullName");
+    const email = localStorage.getItem("email");
+    const phoneNumber = localStorage.getItem("phoneNumber");
+    const dateOfBirth = localStorage.getItem("dateOfBirth");
+    const previousExperience = localStorage.getItem("previousExperience");
+    const noticePeriod = localStorage.getItem("noticePeriod");
+    const skills = localStorage.getItem("skills");
+    const previousCompany = localStorage.getItem("previousCompany");
+
+    // Display the retrieved values
+    document.getElementById("job-position").textContent = jobPosition || "N/A";
+    document.getElementById("user-name").textContent = fullName || "N/A";
+    document.getElementById("full-name").textContent = fullName || "N/A";
+    document.getElementById("email").textContent = email || "N/A";
+    document.getElementById("phone-number").textContent = phoneNumber || "N/A";
+    document.getElementById("date-of-birth").textContent = dateOfBirth || "N/A";
+    document.getElementById("previous-experience").textContent = previousExperience || "N/A";
+    document.getElementById("notice-period").textContent = noticePeriod || "N/A";
+    document.getElementById("skills").textContent = skills || "N/A";
+    document.getElementById("previous-company").textContent = previousCompany || "N/A";
+
+// Add event listeners for the buttons
+            const detailsIncorrectButton = document.getElementById("details-incorrect");
+            const detailsCorrectButton = document.getElementById("details-correct");
+
+            // Redirect to the application form page if details are incorrect
+            detailsIncorrectButton.addEventListener("click", function () {
+                window.location.href = "apply-job.html"; // Replace with the actual URL of your application form page
+            });
+
+            // Redirect to the thank you page if details are correct
+            detailsCorrectButton.addEventListener("click", function () {
+                window.location.href = "thank-you.html"; // Replace with the actual URL of your confirmation page
+            });
+</script>
+<!-- ... (other code) ... -->
+
+    </div>
+	<div id="copyright">
+        &copy; 2023 Shiva Solutions. All rights reserved.
+    </div>
+    
+</body>
+</html>

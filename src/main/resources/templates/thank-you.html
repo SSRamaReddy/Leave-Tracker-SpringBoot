@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="shiva-solutions-logo.png" type="image/x-icon" sizes="32x32">
+    <title>Thank You Confirmation - Shiva Solutions</title>
+    <style>
+    
+    	body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ff9900; /* Highlighted color */
+        }
+
+        #top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+        
+        #menu {
+            text-align: center;
+            background-color: #35424a;
+            padding: -15px 0;
+        }
+
+        #menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        #menu a:hover {
+            color: #ff9900; /* Highlighted color on hover */
+        }
+        
+        #content {
+            text-align: left;
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        #content h2 {
+            color: #ff9900; /* Section header color */
+            background-color: #35424a; /* Section header background color */
+            padding: 10px;
+            margin: 0;
+        }
+
+        #content p {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        #copyright {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    
+    </style>
+</head>
+<body>
+	
+	<header>
+        <div id="logo">
+            <img src="shiva-solutions-logo.png" alt="Company Logo" width="100">
+        </div>
+        <h1>Shiva Solutions</h1>
+        <div id="top-right">
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    const date = now.toDateString();
+                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    document.getElementById("top-right").textContent = `${date} | ${time}`;
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </div>
+    </header>
+    
+    <div id="menu">
+        <a href="ShivaSolutionsHomePage.html">Official Site</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="ShivaSolutionsEmployeePortal.html">Employee Portal</a>
+    </div>
+    
+    <div id="content">
+    
+    	<h1>Thank You <span id="user-name"></span>!</h1>
+    	<p>Your application has been received and will be reviewed shortly. We will notify you of the next steps in our hiring process.</p>
+    	<p>Thank you for considering Shiva Solutions!</p>
+    
+    	<script>
+    		document.getElementById("user-name").textContent = localStorage.getItem("fullName");
+    	</script>
+	</div>
+	
+	
+	<div id="copyright">
+        &copy; 2023 Shiva Solutions. All rights reserved.
+    </div>
+    
+</body>
+</html>

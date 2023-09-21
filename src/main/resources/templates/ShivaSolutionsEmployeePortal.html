@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = 
+"shiva-solutions-logo.png" type = "image/x-icon" sizes = "32x32">
+    <title>Shiva Solutions Employee Portal</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ff9900; /* Highlighted color */
+        }
+
+        #top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+        
+
+        #menu {
+            text-align: center;
+            background-color: #35424a;
+            padding: -15px 0;
+        }
+
+        #menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        #menu a:hover {
+            color: #ff9900; /* Highlighted color on hover */
+        }
+
+        #content {
+            text-align: left;
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        #content h2 {
+            color: #ff9900; /* Section header color */
+            background-color: #35424a; /* Section header background color */
+            padding: 10px;
+            margin: 0;
+        }
+
+        #content p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        /*#copyright {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+        }*/
+        
+        #copyright {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        li{
+        	margin-bottom: 10px;
+        }
+        #portal-info {
+    		text-align: center;
+    		margin-top: 0; 
+    		font-size: 20px; 
+    		color: #666;
+    		padding:10px;
+		}
+		
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="shiva-solutions-logo.png" alt="Company Logo" width="100">
+        </div>
+        <h1>Shiva Solutions</h1>
+        <h2 id="portal-info">Employee Portal</h2>
+        <div id="top-right">
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    const date = now.toDateString();
+                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    document.getElementById("top-right").textContent = `${date} | ${time}`;
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </div>
+    </header>
+
+    <div id="menu">
+        <a href="ShivaSolutionsHomePage.html">Company Official Site</a>
+        <a href="#services">Services</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact">Contact Us</a>
+        <a href="ShivaSolutionsCareers.html" target="_blank">Careers</a>
+    </div>
+
+    <div id="content">
+
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+            	<li><b>Get Employee Details</b> - <a href="http://localhost:8123/getEmployee/{id}" target="_blank">Click Here</a></li>
+            	<li><b>Get All Employee Details</b> - <a href="http://localhost:8123/getEmployees" target="_blank">Click Here</a></li>
+            	<li><b>Update Employee Details</b> - <a href="http://localhost:8123/updateEmployee" target="_blank">Click Here</a></li>
+            	<li><b>Apply Leave</b> - <a href="http://localhost:8123/applyLeave" target="_blank">Click Here</a></li>
+            	<li><b>Check Leaves</b> - <a href="http://localhost:8123/checkLeaves/{id}" target="_blank">Click Here</a></li>
+            </ul>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <ul>
+                <li><b>Chairman, CEO </b> - Jithendra - <a href="mailto:njithendra@shivasolutions.com">njithendra@shivasolutions.com</a></li>
+                <li><b>President</b> - Shiva - <a href="mailto:shiva@shivasolutions.com">shiva@shivasolutions.com</a></li>
+                <li><b>COO</b> - Ganesh - <a href="mailto:ganesh@shivasolutions.com">ganesh@shivasolutions.com</a></li>
+                <li><b>CTO</b> - Saraswathi - <a href="mailto:saraswathi@shivasolutions.com">saraswathi@shivasolutions.com</a></li>
+                <li><b>CFO</b> - Lakshmi - <a href="mailto:lakshmi@shivasolutions.com">lakshmi@shivasolutions.com</a></li>
+                <li><b>CHRO</b> - Taylor Swift - <a href="mailto:taylor.swift@shivasolutions.com">taylor.swift@shivasolutions.com</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please feel free to <a href="mailto:info@shivasolutions.com">contact us</a>.</p>
+            <address>
+                Phone: <a href="tel:+1234567890">+1 (234) 567-890</a><br>
+                Address: 123 Shiva Main Street, Shiavapuram, India
+            </address>
+        </section>
+    </div>
+
+    <div id="copyright">
+        &copy; 2023 Shiva Solutions. All rights reserved.
+    </div>
+</body>
+</html>
+

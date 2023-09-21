@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = 
+"shiva-solutions-logo.png" type = "image/x-icon" sizes = "32x32">
+    <title>Shiva Solutions</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ff9900; /* Highlighted color */
+        }
+
+        #top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+        
+
+        #menu {
+            text-align: center;
+            background-color: #35424a;
+            padding: 10px 0;
+        }
+
+        #menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        #menu a:hover {
+            color: #ff9900; /* Highlighted color on hover */
+        }
+
+        #content {
+            text-align: left;
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        #content h2 {
+            color: #ff9900; /* Section header color */
+            background-color: #35424a; /* Section header background color */
+            padding: 10px;
+            margin: 0;
+        }
+
+        #content p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        /*#copyright {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+        }*/
+        
+        #copyright {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        li{
+        	margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="shiva-solutions-logo.png" alt="Company Logo" width="100">
+        </div>
+        <h1>Shiva Solutions</h1>
+        <div id="top-right">
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    const date = now.toDateString();
+                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    document.getElementById("top-right").textContent = `${date} | ${time}`;
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </div>
+    </header>
+
+
+    <div id="menu">
+        <a href="ShivaSolutionsHomePage.html" >Office Site</a>
+        <a href="ShivaSolutionsEmployeePortal.html" target="_blank">Employee Portal</a>
+        <a href="ShivaSolutionsCareers.html">Back</a>
+    </div>
+
+
+    <div id="content">
+        <section id="about">
+            <h2>About Us</h2>
+            <!-- <p>Welcome to Shiva Solutions, where we provide innovative solutions for your business needs.</p>  -->
+            <p>Welcome to Shiva Solutions! We are a dynamic and innovative company dedicated to providing cutting-edge solutions for our clients. With a team of experts, we strive to meet and exceed your expectations in every project we undertake.</p>
+        	<p>Our commitment to excellence, creativity, and customer satisfaction sets us apart in the industry. We look forward to partnering with you and helping your business thrive.</p>
+        </section>
+    </div>
+    <div id="copyright">
+        &copy; 2023 Shiva Solutions. All rights reserved.
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,852 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="shiva-solutions-logo.png" type="image/x-icon" sizes="32x32">
+    <title>Apply for a Job - Shiva Solutions</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ff9900; /* Highlighted color */
+        }
+
+        #top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        #menu {
+            text-align: center;
+            background-color: #35424a;
+            padding: -15px 0;
+        }
+
+        #menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        #menu a:hover {
+            color: #ff9900; /* Highlighted color on hover */
+        }
+
+        #content {
+            text-align: left;
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        #content h2 {
+            color: #ff9900; /* Section header color */
+            background-color: #35424a; /* Section header background color */
+            padding: 10px;
+            margin: 0;
+        }
+
+        #content p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .apply-form {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff9900; /* Highlighted color on hover */
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        #copyright {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="shiva-solutions-logo.png" alt="Company Logo" width="100">
+        </div>
+        <h1>Shiva Solutions</h1>
+        <div id="top-right">
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    const date = now.toDateString();
+                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    document.getElementById("top-right").textContent = `${date} | ${time}`;
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </div>
+    </header>
+
+    <div id="menu">
+        <a href="ShivaSolutionsHomePage.html">Official Site</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="ShivaSolutionsEmployeePortal.html">Employee Portal</a>
+    </div>
+
+    <div id="content">
+        <h2>Apply for a Job</h2>
+        <p>Select the position you are applying for from the dropdown menu below and fill out the required information:</p>
+
+        
+        <div class="apply-form">
+            <form>
+                <label for="job-position">Select Job Position:</label>
+                <select id="job-position" name="job-position">
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="UX/UI Designer">UX/UI Designer</option>
+                    <option value="Network Administrator">Network Administrator</option>
+                    <option value="Software Tester">Software Tester</option>
+                    <option value="Database Administrator">Database Administrator</option>
+                    <option value="IT Support Specialist">IT Support Specialist</option>
+                    <option value="Front-end Developer">Front-end Developer</option>
+                    <option value="Back-end Developer">Back-end Developer</option>
+                    <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                    <option value="Cloud Solutions Architect">Cloud Solutions Architect</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                </select>
+
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="copyright">
+        &copy; 2023 Shiva Solutions. All rights reserved.
+    </div>
+</body>
+</html>
+-->
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="shiva-solutions-logo.png" type="image/x-icon" sizes="32x32">
+    <title>Apply for a Job - Shiva Solutions</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ff9900; /* Highlighted color */
+        }
+
+        #top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        #menu {
+            text-align: center;
+            background-color: #35424a;
+            padding: -15px 0;
+        }
+
+        #menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        #menu a:hover {
+            color: #ff9900; /* Highlighted color on hover */
+        }
+
+        #content {
+            text-align: left;
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        #content h2 {
+            color: #ff9900; /* Section header color */
+            background-color: #35424a; /* Section header background color */
+            padding: 10px;
+            margin: 0;
+        }
+
+        #content p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .apply-form {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        select, input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff9900; /* Highlighted color on hover */
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        #copyright {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="shiva-solutions-logo.png" alt="Company Logo" width="100">
+        </div>
+        <h1>Shiva Solutions</h1>
+        <div id="top-right">
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    const date = now.toDateString();
+                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    document.getElementById("top-right").textContent = `${date} | ${time}`;
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </div>
+    </header>
+
+    <div id="menu">
+        <a href="ShivaSolutionsHomePage.html">Official Site</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="ShivaSolutionsEmployeePortal.html">Employee Portal</a>
+    </div>
+
+    <div id="content">
+        <h2>Apply for a Job</h2>
+        <p>Select the position you are applying for from the dropdown menu below and fill out the required information:</p>
+
+        <div class="apply-form">
+            <form>
+                <label for="job-position">Select Job Position:</label>
+                <select id="job-position" name="job-position">
+                	<option value="Select An Option">Select An Option</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="UX/UI Designer">UX/UI Designer</option>
+                    <option value="Network Administrator">Network Administrator</option>
+                    <option value="Software Tester">Software Tester</option>
+                    <option value="Database Administrator">Database Administrator</option>
+                    <option value="IT Support Specialist">IT Support Specialist</option>
+                    <option value="Front-end Developer">Front-end Developer</option>
+                    <option value="Back-end Developer">Back-end Developer</option>
+                    <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                    <option value="Cloud Solutions Architect">Cloud Solutions Architect</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                </select>
+
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date-of-birth">Date of Birth:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+
+                <label for="previous-experience">Previous Experience:</label>
+                <textarea id="previous-experience" name="previous-experience" rows="4" required></textarea>
+
+                <label for="notice-period">Notice Period (in weeks):</label>
+                <input type="number" id="notice-period" name="notice-period" required>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" required>
+
+                <label for="previous-company">Previous Company:</label>
+                <input type="text" id="previous-company" name="previous-company" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="copyright">
+        &copy; 2023 Shiva Solutions. All rights reserved.
+    </div>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="shiva-solutions-logo.png" type="image/x-icon" sizes="32x32">
+    <title>Apply for a Job - Shiva Solutions</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ff9900; /* Highlighted color */
+        }
+
+        #top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        #menu {
+            text-align: center;
+            background-color: #35424a;
+            padding: -15px 0;
+        }
+
+        #menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        #menu a:hover {
+            color: #ff9900; /* Highlighted color on hover */
+        }
+
+        #content {
+            text-align: left;
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        #content h2 {
+            color: #ff9900; /* Section header color */
+            background-color: #35424a; /* Section header background color */
+            padding: 10px;
+            margin: 0;
+        }
+
+        #content p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .apply-form {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        select, input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff9900; /* Highlighted color on hover */
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* Added style for the confirmation section */
+        #confirmation {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #confirmation h2 {
+            color: #35424a;
+            background-color: #ff9900;
+            padding: 10px;
+            margin: 0;
+        }
+
+        #confirmation p {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        #copyright {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="shiva-solutions-logo.png" alt="Company Logo" width="100">
+        </div>
+        <h1>Shiva Solutions</h1>
+        <div id="top-right">
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    const date = now.toDateString();
+                    const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    document.getElementById("top-right").textContent = `${date} | ${time}`;
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </div>
+    </header>
+
+    <div id="menu">
+        <a href="ShivaSolutionsHomePage.html">Official Site</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="ShivaSolutionsEmployeePortal.html">Employee Portal</a>
+    </div>
+
+    <div id="content">
+        <h2>Apply for a Job</h2>
+        <p>Select the position you are applying for from the dropdown menu below and fill out the required information:</p>
+
+        <div class="apply-form">
+            <!-- <form id="job-application-form" onsubmit="submitForm(event)"> -->
+            <form id="application-form">
+                <label for="job-position">Select Job Position:</label>
+                <select id="job-position" name="job-position">
+                    <option value="Select An Option">Select An Option</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="UX/UI Designer">UX/UI Designer</option>
+                    <option value="Network Administrator">Network Administrator</option>
+                    <option value="Software Tester">Software Tester</option>
+                    <option value="Database Administrator">Database Administrator</option>
+                    <option value="IT Support Specialist">IT Support Specialist</option>
+                    <option value="Front-end Developer">Front-end Developer</option>
+                    <option value="Back-end Developer">Back-end Developer</option>
+                    <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                    <option value="Cloud Solutions Architect">Cloud Solutions Architect</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                </select>
+
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+
+                <label for="date-of-birth">Date of Birth:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+
+                <label for="previous-experience">Previous Experience:</label>
+                <textarea id="previous-experience" name="previous-experience" rows="4" required></textarea>
+
+                <label for="notice-period">Notice Period (in weeks):</label>
+                <input type="number" id="notice-period" name="notice-period" required>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" required>
+
+                <label for="previous-company">Previous Company:</label>
+                <input type="text" id="previous-company" name="previous-company" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+		<!--  
+		<div id="confirmation">
+            <h2>Thank You for Applying!</h2>
+            <p>We have received your application for the position of <span id="confirmation-job-position"></span>. We will review your application and get in touch with you shortly.</p>
+        </div>
+		-->
+        
+
+		<div id="confirmation">
+    		<h2>Thank You for Applying!</h2>
+    		<p>We have received your application for the position of <span id="confirmation-job-position"></span>. We will review your application and get in touch with you shortly.</p>
+    		<h3>Details Entered:</h3>
+    		<ul>
+       			<li><strong>Full Name:</strong> <span id="confirmation-full-name"></span></li>
+        		<li><strong>Email:</strong> <span id="confirmation-email"></span></li>
+        		<li><strong>Phone Number:</strong> <span id="confirmation-phone-number"></span></li>
+        		<li><strong>Date of Birth:</strong> <span id="confirmation-date-of-birth"></span></li>
+        		<li><strong>Previous Experience:</strong> <span id="confirmation-previous-experience"></span></li>
+       		 	<li><strong>Notice Period (in weeks):</strong> <span id="confirmation-notice-period"></span></li>
+       			<li><strong>Skills:</strong> <span id="confirmation-skills"></span></li>
+        		<li><strong>Previous Company:</strong> <span id="confirmation-previous-company"></span></li>
+    		</ul>
+		</div>
+		<!--
+        <script>
+            function submitForm(event) {
+                event.preventDefault();
+
+                // Get form values
+                const jobPosition = document.getElementById("job-position").value;
+                const fullName = document.getElementById("full-name").value;
+                const email = document.getElementById("email").value;
+                const phoneNumber = document.getElementById("phone-number").value;
+                const dateOfBirth = document.getElementById("date-of-birth").value;
+                const previousExperience = document.getElementById("previous-experience").value;
+                const noticePeriod = document.getElementById("notice-period").value;
+                const skills = document.getElementById("skills").value;
+                const previousCompany = document.getElementById("previous-company").value;
+
+                // Display confirmation message
+                document.getElementById("confirmation-job-position").textContent = jobPosition;
+                document.getElementById("confirmation").style.display = "block";
+
+                // Redirect to the "Thank You" page
+                setTimeout(function () {
+                    window.location.href = "thank-you.html";
+                }, 3000); // Redirect after 3 seconds (adjust as needed)
+            }
+        </script>
+        <script>
+    function submitForm(event) {
+        event.preventDefault();
+
+        // Get form values
+        const jobPosition = document.getElementById("job-position").value;
+        const fullName = document.getElementById("full-name").value;
+        const email = document.getElementById("email").value;
+        const phoneNumber = document.getElementById("phone-number").value;
+        const dateOfBirth = document.getElementById("date-of-birth").value;
+        const previousExperience = document.getElementById("previous-experience").value;
+        const noticePeriod = document.getElementById("notice-period").value;
+        const skills = document.getElementById("skills").value;
+        const previousCompany = document.getElementById("previous-company").value;
+
+        // Display confirmation message with entered details
+        document.getElementById("confirmation-job-position").textContent = jobPosition;
+        document.getElementById("confirmation-full-name").textContent = fullName;
+        document.getElementById("confirmation-email").textContent = email;
+        document.getElementById("confirmation-phone-number").textContent = phoneNumber;
+        document.getElementById("confirmation-date-of-birth").textContent = dateOfBirth;
+        document.getElementById("confirmation-previous-experience").textContent = previousExperience;
+        document.getElementById("confirmation-notice-period").textContent = noticePeriod;
+        document.getElementById("confirmation-skills").textContent = skills;
+        document.getElementById("confirmation-previous-company").textContent = previousCompany;
+
+        // Show the confirmation section
+        document.getElementById("confirmation").style.display = "block";
+
+        // Redirect to the "Thank You" page after a delay
+        setTimeout(function () {
+            window.location.href = "thank-you.html";
+        }, 20000); // Redirect after 3 seconds (adjust as needed)
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("application-form");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Get form values
+            const jobPosition = document.getElementById("job-position").value;
+            const fullName = document.getElementById("full-name").value;
+            const email = document.getElementById("email").value;
+            const phoneNumber = document.getElementById("phone-number").value;
+            const dateOfBirth = document.getElementById("date-of-birth").value;
+            const previousExperience = document.getElementById("previous-experience").value;
+            const noticePeriod = document.getElementById("notice-period").value;
+            const skills = document.getElementById("skills").value;
+            const previousCompany = document.getElementById("previous-company").value;
+
+            // Store form values in session storage (temporary storage)
+            sessionStorage.setItem("jobPosition", jobPosition);
+            sessionStorage.setItem("fullName", fullName);
+            sessionStorage.setItem("email", email);
+            sessionStorage.setItem("phoneNumber", phoneNumber);
+            sessionStorage.setItem("dateOfBirth", dateOfBirth);
+            sessionStorage.setItem("previousExperience", previousExperience);
+            sessionStorage.setItem("noticePeriod", noticePeriod);
+            sessionStorage.setItem("skills", skills);
+            sessionStorage.setItem("previousCompany", previousCompany);
+            
+            
+            document.getElementById("confirmation-job-position").textContent = jobPosition;
+            document.getElementById("confirmation-full-name").textContent = fullName;
+            document.getElementById("confirmation-email").textContent = email;
+            document.getElementById("confirmation-phone-number").textContent = phoneNumber;
+            document.getElementById("confirmation-date-of-birth").textContent = dateOfBirth;
+            document.getElementById("confirmation-previous-experience").textContent = previousExperience;
+            document.getElementById("confirmation-notice-period").textContent = noticePeriod;
+            document.getElementById("confirmation-skills").textContent = skills;
+            document.getElementById("confirmation-previous-company").textContent = previousCompany;
+
+            // Show the confirmation section
+            /*document.getElementById("confirmation").style.display = "block";
+
+            const thankYouPageUrl = "thank-you.html"; // Replace with the actual URL of your "Thank You" page
+            const confirmationOkButton = document.getElementById("confirmation-ok-button");
+
+            confirmationOkButton.addEventListener("click", function () {
+                // Redirect to the "Thank You" page
+                window.location.href = thankYouPageUrl;
+            });
+*/
+            // Show a confirmation dialog
+            /*const isConfirmed = confirm("Please confirm your details. Click OK to proceed to the Thank You page or Cancel to go back to the form.");
+
+            if (isConfirmed) {
+                // Redirect to the "Thank You" page
+                window.location.href = "thank-you.html";
+            } else {
+                // Go back to the form page
+                window.location.href = "apply-job.html";
+            }*/
+            window.location.href = "confirmation.html";
+        });
+    });
+</script>
+-->
+
+<!-- ... (other code) ... -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("application-form");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Get form values
+            const jobPosition = document.getElementById("job-position").value;
+            const fullName = document.getElementById("full-name").value;
+            const email = document.getElementById("email").value;
+            const phoneNumber = document.getElementById("phone-number").value;
+            const dateOfBirth = document.getElementById("date-of-birth").value;
+            const previousExperience = document.getElementById("previous-experience").value;
+            const noticePeriod = document.getElementById("notice-period").value;
+            const skills = document.getElementById("skills").value;
+            const previousCompany = document.getElementById("previous-company").value;
+
+            // Store form values in local storage for persistence
+            localStorage.setItem("jobPosition", jobPosition);
+            localStorage.setItem("fullName", fullName);
+            localStorage.setItem("email", email);
+            localStorage.setItem("phoneNumber", phoneNumber);
+            localStorage.setItem("dateOfBirth", dateOfBirth);
+            localStorage.setItem("previousExperience", previousExperience);
+            localStorage.setItem("noticePeriod", noticePeriod);
+            localStorage.setItem("skills", skills);
+            localStorage.setItem("previousCompany", previousCompany);
+
+            // Redirect to the confirmation page
+            window.location.href = "confirmation.html";
+        });
+    });
+</script>
+<!-- ... (other code) ... -->
+
+    </div>
+
+    <div id="copyright">
+        &copy; 2023 Shiva Solutions. All rights reserved.
+    </div>
+</body>
+</html>
